@@ -1,0 +1,321 @@
+@charset  "UTF-8";
+@font-face {
+    font-family: 'Butler-Bold';
+    src: url("../fonts/Butler_and_ButlerStencil/Butler_Webfont/Butler-Bold.woff2") format('woff2'),
+         url("../fonts/Butler_and_ButlerStencil/Butler_Webfont/Butler_Webfont/Butler-Bold.woff") format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Butler-Medium';
+    src: url("../fonts/Butler_and_ButlerStencil/Butler_Webfont/Butler-Medium.woff2")format('woff2'),
+         url("../fonts/Butler_and_ButlerStencil/Butler_Webfont/Butler-Medium.woff")format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+.Butler-Bold-Class {
+    font-family: "Butler-Bold";
+}
+.Butler-Medium-Class {
+    font-family: "Butler-Medium";
+}
+
+/* ---- base ----*/
+body {
+    background-color: white;
+    font-size: 16px;
+    line-height:  1.5;
+    font-family: 'Times New Roman', Times, serif;
+    color: #181818;
+    text-align: center;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    color: #181818;
+}
+h2 {
+    color: #a41c24;
+    font-size: 5.5em;
+    text-align: left;
+    margin-left: 40px;
+    margin-bottom: 80px;
+    padding: 0;
+}
+p {
+    font-size: 2em;
+}
+
+/* ---- START hamburger menu ---- */
+header{
+    width: 100vw;
+    height: 80px;
+    background-color: #a41c24;
+/*   position: sticky;
+    position: -webkit-sticky;
+    top: 0;*/
+}
+nav.menu-content {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+label {
+    width: 80px;
+    height: 80px;
+    border: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 1000;
+}
+span {
+    width: 40px;
+    height: 4px;
+    background-color: #ffc2c6;
+    border-radius: 2px;
+    position: absolute;
+    right: 15px;
+    transition: .3s;
+    z-index: 100;
+}
+.span1 {
+    top: 20px;
+}
+.span2 {
+    top: 30px;
+}
+.span3 {
+    top: 40px;
+}
+/* -- START when humburger menu opened --*/
+.menu-content:checked {
+    position: absolute;
+    height: 100vh;
+}
+#menu-btn-check:checked ~ .span2 {
+    display: none;
+}
+#menu-btn-check:checked ~ .span1 {
+    width: 30px;
+    transform: rotate(45deg);
+    top: 30px;
+    right: 12px;
+} 
+#menu-btn-check:checked ~ .span3 {
+    width: 30px;
+    transform: rotate(-45deg);
+    top: 30px;
+    right: 12px;
+}
+#menu-btn-check {
+    display: none;
+}
+/* -- END when humburger menu opened --*/ 
+/* -- nav menu --*/ 
+ul {
+    width: 80%;
+    height: 100%;
+    background-color: #a41c24;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    transition: 1s;
+    z-index: 10;
+}
+li {
+    margin-top: 20px;
+    font-size: 2.5em;
+}
+#menu-btn-check:checked ~ ul {
+    right: 0;
+}
+/* -- nav menu --*/ 
+/* ---- END hamburger menu ---- */
+
+/* -- KV -- */
+#KV {
+    height: 740px;
+    min-height: 500px;
+    margin: 0;
+    padding: 0;
+    background-color: #a41c24;
+
+}
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4.0em;
+}
+.img-KV {
+    margin: auto 0;
+    padding: 0;
+    background-color: #efefef;
+}
+.img-KV img {
+    width: 100%;
+    min-height: 400px;
+    object-fit: cover;
+}
+
+.redline {
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    background-color: #a41c24;
+}
+
+#scrollDown {
+    width: 100%;
+    max-height: 200px;
+}
+
+/* -- introduction -- */
+#introduction {
+    margin: 80px auto 200px auto;
+    padding: 0;
+}
+#introduction p {
+    margin: 0 40px;
+}
+
+/* -- works -- */
+#works .works-contents {
+    text-align: left;
+    margin: 0;
+}
+#works .works-contents a img {
+    width: 100%;
+    margin: 0;
+}
+.work-contents-text {
+    height: auto;
+    margin: 0 40px 40px 40px;
+}
+#works .works-contents .work-contents-text h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+#works .works-contents .work-contents-text p {
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+}
+
+/* -- about -- */
+#about {
+    margin: 0;
+    padding: 0;
+}
+#about .about-left img {
+    width: 60%;
+}
+#about .about-right {
+    width: 100vw;
+}
+#about h3 {
+    font-size: 2.75em;
+    font-weight: 600;
+}
+#about p {
+    margin: 0 120px;
+}
+#about img.about-deco {
+    position: relative;
+    bottom: -10px;
+    right: 200px;
+    margin: 0;
+    padding: 0;
+}
+
+/* -- contact -- */
+#contact {
+/*    height: 1000px;*/
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #a41c24;
+}
+#contact h2 {
+    color: #181818;
+    margin-top: 0px;
+}
+#contact p {
+    margin: 0 40px;
+}
+.contact-btn {
+    display: flex;
+    flex-direction: column;
+    margin: 80px 0;
+    padding: 0 40px;
+}
+.contact-btn a {
+    margin-bottom: 40px;
+    font-size: 2em;
+    background: #fff;
+    padding: 18px 30px;
+    border: 2px solid black;
+    box-shadow: 0 10px 0 black;
+    border-radius: 50px;
+    display: inline-block;
+    transition: .3s;
+}
+.contact-btn a:hover {
+    transform: translateY(10px);
+    box-shadow: 0 0 0 black;
+}
+#contact .contact-btn a img {
+    width: 40px;
+    margin: 0 40px 0 0;
+    padding: 0;
+    vertical-align: middle
+}
+#contact .contact-btn a.contact-btn-instagram {
+    background: #E1306C;
+}
+#contact .contact-btn a.contact-btn-twitter {
+    background: #00acee;
+}
+
+/* -- thank you -- */
+#thankyou {
+    height: 540px;
+    background-color: #fff;
+    background-image: url(../img_SP/thankyou_net.png);
+    background-repeat: repeat-x;
+    margin: 0;
+    padding: 0;
+}
+#thankyou .thankyou-contents {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: auto;
+}
+#thankyou .thankyou-contents img.thankyou-text {
+    max-height: 38px;
+    margin: 120px auto 40px auto;
+}
+#thankyou .thankyou-contents img.thankyou-fugu {
+    width: 30%;
+    margin: 20px auto 120px auto;
+}
+
+/* -- footer -- */
+footer {
+    height: 200px;
+    background-color: #181818;
+    color: #ffF;
+    font-size: 1.5em;
+    padding-top: 80px;
+}
+
