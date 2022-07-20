@@ -22,9 +22,11 @@
 }
 
 /* ---- base ----*/
+html {
+    font-size: 62.5%;
+}
 body {
     background-color: white;
-    font-size: 16px;
     line-height:  1.5;
     font-family: 'Times New Roman', Times, serif;
     color: #181818;
@@ -37,14 +39,14 @@ a {
 }
 h2 {
     color: #a41c24;
-    font-size: 5.5em;
+    font-size: 4.8rem;
     text-align: left;
     margin-left: 40px;
     margin-bottom: 80px;
     padding: 0;
 }
 p {
-    font-size: 2em;
+    font-size: 3.2rem;
 }
 
 /* ---- START hamburger menu ---- */
@@ -140,27 +142,27 @@ li {
 
 /* -- KV -- */
 #KV {
-    height: 740px;
+    height: 640px;
     min-height: 500px;
     margin: 0;
     padding: 0;
     background-color: #a41c24;
-
 }
 h1 {
     margin: 0;
     padding: 0;
-    font-size: 4.0em;
+    font-size: 4.0rem;
 }
 .img-KV {
-    margin: auto 0;
+    margin: 40px 0 0 0;
     padding: 0;
     background-color: #efefef;
 }
 .img-KV img {
     width: 100%;
-    min-height: 400px;
-    object-fit: cover;
+    /*min-height: 400px;
+    object-fit: cover;*/
+    padding: 40px 0;
 }
 
 .redline {
@@ -188,7 +190,7 @@ h1 {
 /* -- works -- */
 #works .works-contents {
     text-align: left;
-    margin: 0;
+    margin: 0 0 40px 0;
 }
 #works .works-contents a img {
     width: 100%;
@@ -201,18 +203,18 @@ h1 {
 #works .works-contents .work-contents-text h3 {
     margin: 0;
     padding: 0;
-    font-size: 2.5em;
+    font-size: 4.0rem;
     font-weight: 600;
 }
 #works .works-contents .work-contents-text p {
     margin: 0;
     padding: 0;
-    font-size: 2em;
+    font-size: 3.2rem;
 }
 
 /* -- about -- */
 #about {
-    margin: 0;
+    margin: 100px 0 0 0;
     padding: 0;
 }
 #about .about-left img {
@@ -222,11 +224,11 @@ h1 {
     width: 100vw;
 }
 #about h3 {
-    font-size: 2.75em;
+    font-size: 4.0rem;
     font-weight: 600;
 }
 #about p {
-    margin: 0 120px;
+    margin: 0 40px;
 }
 #about img.about-deco {
     position: relative;
@@ -260,7 +262,7 @@ h1 {
 }
 .contact-btn a {
     margin-bottom: 40px;
-    font-size: 2em;
+    font-size: 2.8rem;
     background: #fff;
     padding: 18px 30px;
     border: 2px solid black;
@@ -315,7 +317,16 @@ footer {
     height: 200px;
     background-color: #181818;
     color: #ffF;
-    font-size: 1.5em;
+    font-size: 2.8rem;
     padding-top: 80px;
 }
 
+/* -- tablet size -- */
+@media screen and (min-width: 600px) {
+
+}
+
+/* -- PC size -- */
+@media screen and (min-width: 1020px) {
+
+}
